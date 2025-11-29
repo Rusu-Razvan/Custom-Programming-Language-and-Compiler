@@ -1,0 +1,122 @@
+begin_class
+
+struct angle {
+    int degrees;
+    int minutes;
+    int seconds;
+} rightAngle;
+
+struct triangle {
+    float z;
+    float test(int k){
+        int k := 3;
+    }
+} 
+
+struct A {
+    int x := 100;
+    int y := 200;
+    int g(int z) {
+        x := 300;
+        Print(x);
+        if(x+2 > y+5 && x+3 > 10){
+            x := x+ y;
+            Print(x);
+            while(x>10){
+                int x; x := 3000;
+                Print(x);
+            }
+        }
+    return z + y;
+    }
+    int f(int z){
+        if(x+2 > y+5){
+            x := x+4;
+        }
+        return x*z*y;
+    }
+}
+
+end_class
+
+begin_decl
+
+int x := 60;
+int ix := 10;
+int iy := 900;
+int iz := 30;
+bool b1 := real;
+bool b2 := fake;
+float fx := 6.5;
+string s := "string";
+char c := 'x';
+int v[10];
+
+end_decl
+
+begin_func
+int testFunction(int k){
+    k := 1;
+    k := k + 1;
+    Print(k);
+    testFunction(k);
+    k := testFunction(k+1) + 1;
+    if(k == 1){
+        k := k + 1;
+    }
+}
+
+int f(int z){
+    int x; int y;
+    x := 5; y := 10;
+    Print(x*y*10);
+    if(x > 2){
+        int x := 100;
+        Print(x*6);
+        bool flag;
+        while(flag == real){
+            int x;
+            x :=8;
+            Print(ix * 70);
+            Print(x*100);
+            flag := fake;
+        }
+        y := 1000;
+        Print(iy);
+    }
+    Print(y);
+    return z*10;
+}
+
+int bfunc(bool b, string s){
+    if(b == real){
+        return 10;
+    }
+    else return 100;
+}
+
+
+end_func
+
+
+
+
+
+begin_progr
+
+fx := fx + 10.0 * fx - 65.0;
+Print(fx);
+Print(s);
+s:="otherstr";
+Print(s);
+Print(c);
+
+v[10] := 100;
+
+Print(ix);
+
+b1 := b2;
+bfunc(b1, "s");
+TypeOf( ix + 5 > iy + 6);
+TypeOf( ix + 5 > iy + 6 && b1 == fake ||f(ix) > 5);
+end_progr
